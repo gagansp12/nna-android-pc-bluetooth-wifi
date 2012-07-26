@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">AndroidSocket</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">main</string>
+	<string name="Send_Text">Send Text</string>
+</resources>
