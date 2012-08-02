@@ -16,7 +16,7 @@ public class Main extends Activity {
         setContentView(R.layout.activity_main);
         mSendText = (EditText)findViewById(R.id.SendText);
         mChatList = (EditText)findViewById(R.id.ChatList);
-        mySocket = new MySocket("192.168.1.9", 1000);
+        mySocket = new MySocket("192.168.1.56", 1000);
         threadSocket = new Thread(mySocket);
         threadSocket.start();
     }
