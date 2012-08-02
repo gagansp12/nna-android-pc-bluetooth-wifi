@@ -70,20 +70,20 @@ public class Java_socket {
 		final JTextField m_port = new JTextField();
 		m_tcpip.setText("192.168.1.56");
 		m_port.setText("1000");
-		m_tcpip.setEnabled(false);
+		//m_tcpip.setEnabled(false);
 		start.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
 				if(com.getSelectedIndex() == 0){//wifi
 					if(comSide.getSelectedIndex() == 0){
-						m_tcpip.setEnabled(false);
+						//m_tcpip.setEnabled(false);
 						mySocket = new MySocket(Integer.parseInt(m_port.getText()));
 						socketThread = new Thread(mySocket);
 						socketThread.start();
 
 					}else{
-						m_tcpip.setEnabled(true);
+						//m_tcpip.setEnabled(true);
 						mySocket = new MySocket(m_tcpip.getText(),Integer.parseInt(m_port.getText()));
 						socketThread = new Thread(mySocket);
 						socketThread.start();
